@@ -3,6 +3,8 @@ package controllers
 import akka.actor.ActorSystem
 import javax.inject._
 import play.api._
+import play.api.libs.iteratee.Enumerator
+import play.api.libs.ws.{WSResponse, WSClient}
 import play.api.mvc._
 import services.ServiceDiscovery
 import scala.concurrent.{ExecutionContext, Future, Promise}
@@ -19,7 +21,7 @@ import scala.concurrent.duration._
  * asynchronous code.
  */
 @Singleton
-class AsyncController @Inject()(actorSystem: ActorSystem, sd : ServiceDiscovery)(implicit exec: ExecutionContext) extends Controller {
+class AsyncController @Inject()(actorSystem: ActorSystem, sd : ServiceDiscovery, ws : WSClient)(implicit exec: ExecutionContext) extends Controller {
 
   /**
    * Create an Action that returns a plain text message after a delay
@@ -46,8 +48,17 @@ class AsyncController @Inject()(actorSystem: ActorSystem, sd : ServiceDiscovery)
   def playlister = Action.async {
     request => 
     print(request)
-    sd.service("url")
-    getFutureMessage(1.second).map { msg => Ok(msg) }
+      val url = s"${sd.getHost(request.host)}${request.path}?${request.rawQueryString}"
+      val wsRequest = ws.url(s"http://$url")
+      val response = request.method match {
+        case "GET" => wsRequest.get()
+      }
+      response.map(
+        res => {
+          val header: Option[String] = res.header("Content-Type")
+          Ok(res.body).withHeaders(("Content-Type", header.get))}
+
+      )
   }
 
 }
