@@ -1,47 +1,185 @@
-2016-03-06 12:38:27,274 [INFO] from play.core.server.NettyServer in pool-4-thread-1 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-2016-03-06 12:38:45,449 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2016-03-06 12:38:45,582 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
-2016-03-06 12:38:45,596 [INFO] from application in application-akka.actor.default-dispatcher-4 - Searching for tag-value=localhost:9000
-2016-03-06 12:38:46,604 [INFO] from application in application-akka.actor.default-dispatcher-4 - /playlist?artistQuery=blur resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/playlist?artistQuery=blur
-2016-03-06 12:38:46,804 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 12:39:44,010 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
-2016-03-06 12:39:44,010 [INFO] from application in application-akka.actor.default-dispatcher-2 - /playlist?artistQuery=blur resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/playlist?artistQuery=blur
-2016-03-06 12:39:44,051 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:00:28,624 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
-2016-03-06 13:00:28,633 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
-2016-03-06 13:00:28,635 [INFO] from application in application-akka.actor.default-dispatcher-6 - Searching for tag-value=localhost:9000
-2016-03-06 13:00:28,929 [INFO] from application in application-akka.actor.default-dispatcher-6 - / resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/?
-2016-03-06 13:00:28,985 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-6 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:00:29,089 [INFO] from application in application-akka.actor.default-dispatcher-9 - Trying to resolve host for localhost:9000
-2016-03-06 13:00:29,089 [INFO] from application in application-akka.actor.default-dispatcher-9 - /bootstrap/bootstrap.min.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.css?
-2016-03-06 13:00:29,110 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
-2016-03-06 13:00:29,110 [INFO] from application in application-akka.actor.default-dispatcher-6 - /bootstrap/jumbotron.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/jumbotron.css?
-2016-03-06 13:00:29,117 [INFO] from application in application-akka.actor.default-dispatcher-9 - Trying to resolve host for localhost:9000
-2016-03-06 13:00:29,117 [INFO] from application in application-akka.actor.default-dispatcher-9 - /bootstrap/bootstrap.min.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.js?
-2016-03-06 13:00:29,117 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
-2016-03-06 13:00:29,118 [INFO] from application in application-akka.actor.default-dispatcher-6 - /bundle.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bundle.js?
-2016-03-06 13:00:29,126 [INFO] from application in application-akka.actor.default-dispatcher-9 - Trying to resolve host for localhost:9000
-2016-03-06 13:00:29,126 [INFO] from application in application-akka.actor.default-dispatcher-9 - /custom.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/custom.css?
-2016-03-06 13:00:29,126 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
-2016-03-06 13:00:29,126 [INFO] from application in application-akka.actor.default-dispatcher-3 - /images/sound-wave.svg resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/images/sound-wave.svg?
-2016-03-06 13:00:29,181 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-9 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:00:29,203 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-9 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:00:29,454 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-9 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:00:29,473 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-9 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:00:29,486 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-9 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:00:30,891 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-9 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:01:11,420 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
-2016-03-06 13:01:11,420 [INFO] from application in application-akka.actor.default-dispatcher-5 - /playlist?artistQuery=blur resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/playlist?artistQuery=blur
-2016-03-06 13:01:11,444 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-5 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:02:00,098 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
-2016-03-06 13:02:00,109 [INFO] from application in application-akka.actor.default-dispatcher-3 - processing GET /playlist?artistQuery=blur
-2016-03-06 13:02:00,110 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
-2016-03-06 13:02:00,111 [INFO] from application in application-akka.actor.default-dispatcher-3 - Searching for tag-value=localhost:9000
-2016-03-06 13:02:02,056 [INFO] from application in application-akka.actor.default-dispatcher-3 - /playlist?artistQuery=blur resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/playlist?artistQuery=blur
-2016-03-06 13:02:03,263 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
-2016-03-06 13:02:21,372 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
-2016-03-06 13:02:21,391 [INFO] from application in application-akka.actor.default-dispatcher-8 - processing GET /playlist?artistQuery=blur
-2016-03-06 13:02:21,392 [INFO] from application in application-akka.actor.default-dispatcher-8 - Trying to resolve host for localhost:9000
-2016-03-06 13:02:21,395 [INFO] from application in application-akka.actor.default-dispatcher-8 - Searching for tag-value=localhost:9000
-2016-03-06 13:02:21,988 [INFO] from application in application-akka.actor.default-dispatcher-8 - /playlist?artistQuery=blur resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com:9000/playlist?artistQuery=blur
-2016-03-06 13:02:22,307 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-8 - Content-Type set both in header (application/json; charset=utf-8) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:12:13,536 [INFO] from play.core.server.NettyServer in pool-4-thread-2 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-03-06 20:14:57,773 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2016-03-06 20:14:58,057 [INFO] from application in application-akka.actor.default-dispatcher-3 - processing GET /
+2016-03-06 20:14:58,075 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:14:58,113 [INFO] from application in application-akka.actor.default-dispatcher-3 - Searching for tag-value=localhost:9000
+2016-03-06 20:14:59,724 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:14:59,725 [INFO] from application in application-akka.actor.default-dispatcher-3 - / resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/?
+2016-03-06 20:15:05,094 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:15:05,286 [INFO] from application in application-akka.actor.default-dispatcher-3 - processing GET /custom.css
+2016-03-06 20:15:05,286 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,286 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,286 [INFO] from application in application-akka.actor.default-dispatcher-2 - processing GET /bundle.js
+2016-03-06 20:15:05,286 [INFO] from application in application-akka.actor.default-dispatcher-5 - processing GET /bootstrap/jumbotron.css
+2016-03-06 20:15:05,286 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-5 - /bootstrap/jumbotron.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/jumbotron.css?
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-3 - /custom.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/custom.css?
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-2 - /bundle.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bundle.js?
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-5 - processing GET /images/sound-wave.svg
+2016-03-06 20:15:05,287 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-5 - /images/sound-wave.svg resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/images/sound-wave.svg?
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-4 - processing GET /bootstrap/bootstrap.min.css
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-4 - /bootstrap/bootstrap.min.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.css?
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-3 - processing GET /bootstrap/bootstrap.min.js
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:05,288 [INFO] from application in application-akka.actor.default-dispatcher-3 - /bootstrap/bootstrap.min.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.js?
+2016-03-06 20:15:05,315 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:15:05,348 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:15:05,423 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:15:05,439 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:15:05,848 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:15:07,612 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:15:08,269 [INFO] from application in application-akka.actor.default-dispatcher-4 - processing GET /favicon.ico
+2016-03-06 20:15:08,269 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:08,269 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:15:08,269 [INFO] from application in application-akka.actor.default-dispatcher-4 - /favicon.ico resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/favicon.ico?
+2016-03-06 20:15:08,291 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:17:56,935 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2016-03-06 20:17:56,947 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /
+2016-03-06 20:17:56,948 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:56,950 [INFO] from application in application-akka.actor.default-dispatcher-6 - Searching for tag-value=localhost:9000
+2016-03-06 20:17:58,006 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,006 [INFO] from application in application-akka.actor.default-dispatcher-6 - / resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/?
+2016-03-06 20:17:58,317 [INFO] from application in application-akka.actor.default-dispatcher-6 - status = 200
+2016-03-06 20:17:58,318 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-6 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:17:58,411 [INFO] from application in application-akka.actor.default-dispatcher-2 - processing GET /custom.css
+2016-03-06 20:17:58,411 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,411 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,411 [INFO] from application in application-akka.actor.default-dispatcher-2 - /custom.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/custom.css?
+2016-03-06 20:17:58,415 [INFO] from application in application-akka.actor.default-dispatcher-3 - processing GET /bundle.js
+2016-03-06 20:17:58,415 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,415 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,415 [INFO] from application in application-akka.actor.default-dispatcher-3 - /bundle.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bundle.js?
+2016-03-06 20:17:58,416 [INFO] from application in application-akka.actor.default-dispatcher-2 - processing GET /bootstrap/bootstrap.min.js
+2016-03-06 20:17:58,416 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,416 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,416 [INFO] from application in application-akka.actor.default-dispatcher-2 - /bootstrap/bootstrap.min.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.js?
+2016-03-06 20:17:58,417 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /images/sound-wave.svg
+2016-03-06 20:17:58,417 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,417 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,417 [INFO] from application in application-akka.actor.default-dispatcher-6 - /images/sound-wave.svg resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/images/sound-wave.svg?
+2016-03-06 20:17:58,418 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /bootstrap/bootstrap.min.css
+2016-03-06 20:17:58,418 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,418 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,418 [INFO] from application in application-akka.actor.default-dispatcher-6 - /bootstrap/bootstrap.min.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.css?
+2016-03-06 20:17:58,420 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /bootstrap/jumbotron.css
+2016-03-06 20:17:58,421 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,421 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:17:58,421 [INFO] from application in application-akka.actor.default-dispatcher-6 - /bootstrap/jumbotron.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/jumbotron.css?
+2016-03-06 20:17:58,911 [INFO] from application in application-akka.actor.default-dispatcher-3 - status = 200
+2016-03-06 20:17:58,911 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:17:58,947 [INFO] from application in application-akka.actor.default-dispatcher-3 - status = 200
+2016-03-06 20:17:58,947 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:17:58,974 [INFO] from application in application-akka.actor.default-dispatcher-3 - status = 200
+2016-03-06 20:17:58,974 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:17:59,231 [INFO] from application in application-akka.actor.default-dispatcher-3 - status = 404
+2016-03-06 20:17:59,232 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:17:59,655 [INFO] from application in application-akka.actor.default-dispatcher-3 - status = 200
+2016-03-06 20:17:59,657 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:01,810 [INFO] from application in application-akka.actor.default-dispatcher-3 - status = 200
+2016-03-06 20:18:01,814 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:02,444 [INFO] from application in application-akka.actor.default-dispatcher-3 - processing GET /favicon.ico
+2016-03-06 20:18:02,444 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:02,445 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:02,445 [INFO] from application in application-akka.actor.default-dispatcher-3 - /favicon.ico resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/favicon.ico?
+2016-03-06 20:18:02,497 [INFO] from application in application-akka.actor.default-dispatcher-3 - status = 404
+2016-03-06 20:18:02,498 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-3 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:45,155 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-03-06 20:18:45,168 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /
+2016-03-06 20:18:45,170 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:45,171 [INFO] from application in application-akka.actor.default-dispatcher-6 - Searching for tag-value=localhost:9000
+2016-03-06 20:18:47,212 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,213 [INFO] from application in application-akka.actor.default-dispatcher-6 - / resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/?
+2016-03-06 20:18:47,681 [INFO] from application in application-akka.actor.default-dispatcher-6 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/? status = 200
+2016-03-06 20:18:47,682 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-6 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:47,795 [INFO] from application in application-akka.actor.default-dispatcher-7 - processing GET /bootstrap/bootstrap.min.js
+2016-03-06 20:18:47,795 [INFO] from application in application-akka.actor.default-dispatcher-7 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,795 [INFO] from application in application-akka.actor.default-dispatcher-7 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,795 [INFO] from application in application-akka.actor.default-dispatcher-7 - /bootstrap/bootstrap.min.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.js?
+2016-03-06 20:18:47,795 [INFO] from application in application-akka.actor.default-dispatcher-2 - processing GET /images/sound-wave.svg
+2016-03-06 20:18:47,796 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,796 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,796 [INFO] from application in application-akka.actor.default-dispatcher-2 - /images/sound-wave.svg resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/images/sound-wave.svg?
+2016-03-06 20:18:47,795 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /bootstrap/jumbotron.css
+2016-03-06 20:18:47,796 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,796 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,796 [INFO] from application in application-akka.actor.default-dispatcher-6 - /bootstrap/jumbotron.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/jumbotron.css?
+2016-03-06 20:18:47,797 [INFO] from application in application-akka.actor.default-dispatcher-5 - processing GET /bootstrap/bootstrap.min.css
+2016-03-06 20:18:47,798 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,798 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,798 [INFO] from application in application-akka.actor.default-dispatcher-5 - /bootstrap/bootstrap.min.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.css?
+2016-03-06 20:18:47,799 [INFO] from application in application-akka.actor.default-dispatcher-4 - processing GET /bundle.js
+2016-03-06 20:18:47,799 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,799 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,800 [INFO] from application in application-akka.actor.default-dispatcher-4 - /bundle.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bundle.js?
+2016-03-06 20:18:47,806 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /custom.css
+2016-03-06 20:18:47,806 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,806 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:47,806 [INFO] from application in application-akka.actor.default-dispatcher-6 - /custom.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/custom.css?
+2016-03-06 20:18:48,153 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.js? status = 200
+2016-03-06 20:18:48,154 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:48,157 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/jumbotron.css? status = 200
+2016-03-06 20:18:48,158 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:48,168 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/custom.css? status = 404
+2016-03-06 20:18:48,169 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:48,192 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/images/sound-wave.svg? status = 200
+2016-03-06 20:18:48,192 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:48,986 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.css? status = 200
+2016-03-06 20:18:48,987 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:51,572 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bundle.js? status = 200
+2016-03-06 20:18:51,576 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:18:52,179 [INFO] from application in application-akka.actor.default-dispatcher-4 - processing GET /favicon.ico
+2016-03-06 20:18:52,179 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:52,179 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:18:52,179 [INFO] from application in application-akka.actor.default-dispatcher-4 - /favicon.ico resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/favicon.ico?
+2016-03-06 20:18:52,204 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/favicon.ico? status = 404
+2016-03-06 20:18:52,204 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:22,510 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-03-06 20:19:22,523 [INFO] from application in application-akka.actor.default-dispatcher-5 - processing GET /
+2016-03-06 20:19:22,524 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:22,525 [INFO] from application in application-akka.actor.default-dispatcher-5 - Searching for tag-value=localhost:9000
+2016-03-06 20:19:24,043 [INFO] from application in application-akka.actor.default-dispatcher-5 - / resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/
+2016-03-06 20:19:24,097 [INFO] from application in application-akka.actor.default-dispatcher-5 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/ status = 200
+2016-03-06 20:19:24,098 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-5 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:24,223 [INFO] from application in application-akka.actor.default-dispatcher-5 - processing GET /bootstrap/bootstrap.min.css
+2016-03-06 20:19:24,224 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:24,224 [INFO] from application in application-akka.actor.default-dispatcher-5 - /bootstrap/bootstrap.min.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.css
+2016-03-06 20:19:24,225 [INFO] from application in application-akka.actor.default-dispatcher-4 - processing GET /bootstrap/bootstrap.min.js
+2016-03-06 20:19:24,225 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:24,225 [INFO] from application in application-akka.actor.default-dispatcher-4 - /bootstrap/bootstrap.min.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.js
+2016-03-06 20:19:24,227 [INFO] from application in application-akka.actor.default-dispatcher-6 - processing GET /images/sound-wave.svg
+2016-03-06 20:19:24,227 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:24,227 [INFO] from application in application-akka.actor.default-dispatcher-6 - /images/sound-wave.svg resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/images/sound-wave.svg
+2016-03-06 20:19:24,230 [INFO] from application in application-akka.actor.default-dispatcher-3 - processing GET /custom.css
+2016-03-06 20:19:24,230 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:24,230 [INFO] from application in application-akka.actor.default-dispatcher-3 - /custom.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/custom.css
+2016-03-06 20:19:24,231 [INFO] from application in application-akka.actor.default-dispatcher-5 - processing GET /bundle.js
+2016-03-06 20:19:24,231 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:24,231 [INFO] from application in application-akka.actor.default-dispatcher-2 - processing GET /bootstrap/jumbotron.css
+2016-03-06 20:19:24,231 [INFO] from application in application-akka.actor.default-dispatcher-5 - /bundle.js resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bundle.js
+2016-03-06 20:19:24,231 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:24,231 [INFO] from application in application-akka.actor.default-dispatcher-2 - /bootstrap/jumbotron.css resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/jumbotron.css
+2016-03-06 20:19:24,819 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/custom.css status = 404
+2016-03-06 20:19:24,820 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:24,848 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/jumbotron.css status = 200
+2016-03-06 20:19:24,849 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:25,078 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.css status = 200
+2016-03-06 20:19:25,079 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:25,284 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bootstrap/bootstrap.min.js status = 200
+2016-03-06 20:19:25,285 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:25,296 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/images/sound-wave.svg status = 200
+2016-03-06 20:19:25,296 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:27,334 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/bundle.js status = 200
+2016-03-06 20:19:27,339 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 20:19:28,075 [INFO] from application in application-akka.actor.default-dispatcher-4 - processing GET /favicon.ico
+2016-03-06 20:19:28,075 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 20:19:28,075 [INFO] from application in application-akka.actor.default-dispatcher-4 - /favicon.ico resolved to ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/favicon.ico
+2016-03-06 20:19:28,102 [INFO] from application in application-akka.actor.default-dispatcher-4 - url=ec2-52-49-106-158.eu-west-1.compute.amazonaws.com/favicon.ico status = 404
+2016-03-06 20:19:28,103 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-4 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
