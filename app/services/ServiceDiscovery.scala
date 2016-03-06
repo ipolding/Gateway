@@ -53,10 +53,16 @@ class ServiceDiscovery @Inject() (configuration : Configuration) (implicit ec: E
     val instances = ec2Client.describeInstances(
             request.withFilters(
                         purposeFilter.withValues(subdomain)))
-    val topResult = instances.getReservations.head
-    topResult.getInstances.head.getPublicDnsName
+    val topResult = instances.getReservations.headOption
+
+    if (topResult.isEmpty) {
+        throw new EC2InstanceNotFound(s"Couldn't find any reservations for tag-value:$subdomain")
+    } else {
+      topResult.get.getInstances.head.getPublicDnsName
+    }
 
   }
 
-
 }
+
+class EC2InstanceNotFound(s: String) extends RuntimeException
