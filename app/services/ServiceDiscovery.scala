@@ -7,6 +7,7 @@ import com.amazonaws.regions.{Region, Regions}
 import com.amazonaws.services.ec2.AmazonEC2Client
 import com.amazonaws.services.ec2.model.DescribeInstancesRequest
 import play.api.{Configuration, Logger}
+import play.api.mvc._
 
 import scala.concurrent.ExecutionContext
 
@@ -29,19 +30,20 @@ class ServiceDiscovery @Inject() (configuration : Configuration) (implicit ec: E
     client
   }
 
-  def getHost(subdomain : String) : String = {
-    val maybeAddress = services get subdomain
-    Logger.info(s"Searching for $subdomain")
+  def getHost(request : Request[AnyContent]) : String = {
+    val host: String = request.host
+    Logger.info(s"Trying to resolve host for ${host}")
+    val maybeAddress = services get host
     if (maybeAddress.isEmpty) {
-      val dns = lookUpDNS(subdomain)
-        services += (subdomain -> dns)
-        services(subdomain)
+      val dns = lookUpDNS(host)
+        services += (host -> dns)
+        services(host)
     } else {
       maybeAddress.get
     }
   }
 
-  private def lookUpDNS(subdomain : String) : String = {
+  private def lookUpDNS(host : String) : String = {
 
     import com.amazonaws.services.ec2.model.Filter
 
@@ -50,13 +52,14 @@ class ServiceDiscovery @Inject() (configuration : Configuration) (implicit ec: E
     val request = new DescribeInstancesRequest()
     val purposeFilter = new Filter("tag-value")
 
+    Logger.info(s"Searching for tag-value=$host")
     val instances = ec2Client.describeInstances(
-            request.withFilters(
-                        purposeFilter.withValues(subdomain)))
+                                  request.withFilters(purposeFilter.withValues(host)))
     val topResult = instances.getReservations.headOption
 
     if (topResult.isEmpty) {
-        throw new EC2InstanceNotFound(s"Couldn't find any reservations for tag-value:$subdomain")
+        Logger.error(s"Couldn't find any reservations for tag-value=$host")
+        throw new EC2InstanceNotFound(s"Couldn't find any reservations for tag-value=$host")
     } else {
       topResult.get.getInstances.head.getPublicDnsName
     }

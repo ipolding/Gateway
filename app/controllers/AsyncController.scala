@@ -25,7 +25,7 @@ class AsyncController @Inject()(sd : ServiceDiscovery, ws : WSClient)(implicit e
   def playlister(id : String) = Action.async {
     request => 
 
-      val url = s"${sd.getHost(request.host)}${request.path}?${request.rawQueryString}"
+      val url = s"${sd.getHost(request)}${request.path}?${request.rawQueryString}"
       val response = ws.url(s"http://$url").get()
 
       response.map(

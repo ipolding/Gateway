@@ -1,80 +1,81 @@
-2016-03-06 11:29:25,604 [INFO] from play.core.server.NettyServer in pool-4-thread-6 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-2016-03-06 11:29:34,511 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2016-03-06T11:29:34.490Z.
-2016-03-06 11:29:35,519 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2016-03-06 11:29:35,594 [INFO] from application in application-akka.actor.default-dispatcher-5 - Searching for localhost:9000
-2016-03-06 11:29:39,127 [ERROR] from application in application-akka.actor.default-dispatcher-5 - 
+2016-03-06 12:24:36,201 [INFO] from play.core.server.NettyServer in pool-4-thread-7 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-03-06 12:24:43,712 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2016-03-06 12:24:43,811 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 12:24:43,817 [INFO] from application in application-akka.actor.default-dispatcher-5 - Searching for tag-value=localhost:9000
+2016-03-06 12:24:44,479 [ERROR] from application in application-akka.actor.default-dispatcher-5 - Couldn't find any reservations for tag-value=localhost:9000
+2016-03-06 12:31:20,604 [ERROR] from application in netty-event-loop-4 - 
 
-! @6pb92c9fa - Internal server error, for (GET) [/] ->
+! @6pb9aep3k - Internal server error, for (GET) [/] ->
  
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[AmazonServiceException: AWS was not able to validate the provided access credentials (Service: AmazonEC2; Status Code: 401; Error Code: AuthFailure; Request ID: 0c1f0187-4c0b-47cb-b98e-2a99e9d8d894)]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:269)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:195)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:98)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:98)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$$anonfun$tryCompleteWith$1.apply(Promise.scala:76)
-	at scala.concurrent.Promise$$anonfun$tryCompleteWith$1.apply(Promise.scala:76)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.complete(Promise.scala:55)
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153)
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235)
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+play.sbt.PlayExceptions$CompilationException: Compilation error[trait Request takes type parameters]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:338)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:43)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:39)
+	at play.runsupport.Reloader.reload(Reloader.scala:336)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:118)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:116)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:405)
 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: com.amazonaws.AmazonServiceException: AWS was not able to validate the provided access credentials (Service: AmazonEC2; Status Code: 401; Error Code: AuthFailure; Request ID: 0c1f0187-4c0b-47cb-b98e-2a99e9d8d894)
-	at com.amazonaws.http.AmazonHttpClient.handleErrorResponse(AmazonHttpClient.java:1369)
-	at com.amazonaws.http.AmazonHttpClient.executeOneRequest(AmazonHttpClient.java:913)
-	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:631)
-	at com.amazonaws.http.AmazonHttpClient.doExecute(AmazonHttpClient.java:400)
-	at com.amazonaws.http.AmazonHttpClient.executeWithTimer(AmazonHttpClient.java:362)
-	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:311)
-	at com.amazonaws.services.ec2.AmazonEC2Client.invoke(AmazonEC2Client.java:11128)
-	at com.amazonaws.services.ec2.AmazonEC2Client.describeInstances(AmazonEC2Client.java:5398)
-	at services.ServiceDiscovery.lookUpDNS(ServiceDiscovery.scala:65)
-	at services.ServiceDiscovery.getHost(ServiceDiscovery.scala:48)
-	at controllers.AsyncController$$anonfun$playlister$1.apply(AsyncController.scala:51)
-	at controllers.AsyncController$$anonfun$playlister$1.apply(AsyncController.scala:49)
-	at play.api.mvc.Action$.invokeBlock(Action.scala:498)
-	at play.api.mvc.Action$.invokeBlock(Action.scala:495)
-	at play.api.mvc.ActionBuilder$$anon$2.apply(Action.scala:458)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	... 13 common frames omitted
+2016-03-06 12:31:46,158 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2016-03-06 12:31:46,166 [INFO] from application in application-akka.actor.default-dispatcher-7 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:46,167 [INFO] from application in application-akka.actor.default-dispatcher-7 - Searching for tag-value=localhost:9000
+2016-03-06 12:31:46,575 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-7 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:31:46,671 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:46,671 [INFO] from application in application-akka.actor.default-dispatcher-7 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:46,678 [INFO] from application in application-akka.actor.default-dispatcher-9 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:46,684 [INFO] from application in application-akka.actor.default-dispatcher-9 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:46,690 [INFO] from application in application-akka.actor.default-dispatcher-7 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:46,691 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:46,709 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:31:46,800 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:31:46,947 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:31:46,961 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:31:46,996 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:31:48,310 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:31:48,912 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 12:31:48,970 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:10,201 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2016-03-06 12:32:10,216 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:10,217 [INFO] from application in application-akka.actor.default-dispatcher-5 - Searching for tag-value=localhost:9000
+2016-03-06 12:32:10,982 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-5 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:11,068 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,069 [INFO] from application in application-akka.actor.default-dispatcher-6 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,072 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,073 [INFO] from application in application-akka.actor.default-dispatcher-4 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,068 [INFO] from application in application-akka.actor.default-dispatcher-5 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,085 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,236 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:11,239 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,243 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:11,246 [INFO] from application in application-akka.actor.default-dispatcher-2 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,250 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:11,276 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:11,281 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:11,369 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/html) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:11,371 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:11,821 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (image/svg+xml) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:12,424 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:12,428 [INFO] from application in application-akka.actor.default-dispatcher-3 - Trying to resolve host for localhost:9000
+2016-03-06 12:32:14,491 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (text/css) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
+2016-03-06 12:32:14,827 [WARN] from play.core.server.netty.NettyModelConversion in application-akka.actor.default-dispatcher-2 - Content-Type set both in header (application/javascript) and attached to entity (text/plain; charset=utf-8), ignoring content type from entity. To remove this warning, use Result.as(...) to set the content type, rather than setting the header manually.
