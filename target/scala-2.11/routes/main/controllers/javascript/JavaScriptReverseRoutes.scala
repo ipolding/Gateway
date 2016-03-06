@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/ian/Development/Projects/Gateway/conf/routes
-// @DATE:Sun Mar 06 11:39:56 GMT 2016
+// @DATE:Sun Mar 06 12:37:14 GMT 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ package controllers.javascript {
   import ReverseRouteContext.empty
 
   // @LINE:16
-  class ReverseAsyncController(_prefix: => String) {
+  class ReverseProxyController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
@@ -24,7 +24,7 @@ package controllers.javascript {
   
     // @LINE:16
     def playlister: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.AsyncController.playlister",
+      "controllers.ProxyController.playlister",
       """
         function(id0) {
         

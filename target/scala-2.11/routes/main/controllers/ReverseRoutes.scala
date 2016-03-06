@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/ian/Development/Projects/Gateway/conf/routes
-// @DATE:Sun Mar 06 11:39:56 GMT 2016
+// @DATE:Sun Mar 06 12:37:14 GMT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,7 +13,7 @@ import _root_.controllers.Assets.Asset
 package controllers {
 
   // @LINE:16
-  class ReverseAsyncController(_prefix: => String) {
+  class ReverseProxyController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
