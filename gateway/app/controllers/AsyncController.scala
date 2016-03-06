@@ -45,14 +45,12 @@ class AsyncController @Inject()(actorSystem: ActorSystem, sd : ServiceDiscovery,
   * Forwards requests to playlist to the playlister API
   *
   */
-  def playlister = Action.async {
+  def playlister(id : String) = Action.async {
     request => 
     print(request)
       val url = s"${sd.getHost(request.host)}${request.path}?${request.rawQueryString}"
-      val wsRequest = ws.url(s"http://$url")
-      val response = request.method match {
-        case "GET" => wsRequest.get()
-      }
+      val response = ws.url(s"http://$url").get()
+
       response.map(
         res => {
           val header: Option[String] = res.header("Content-Type")
