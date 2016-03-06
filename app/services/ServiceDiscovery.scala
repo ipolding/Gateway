@@ -44,6 +44,7 @@ class ServiceDiscovery @Inject() (configuration : Configuration) (implicit ec: E
   private def lookUpDNS(subdomain : String) : String = {
 
     import com.amazonaws.services.ec2.model.Filter
+
     import scala.collection.JavaConversions._
 
     val request = new DescribeInstancesRequest()
