@@ -1,29 +1,25 @@
 package services
 
-import java.time.{Clock, Instant}
 import javax.inject._
-import com.amazonaws.regions.Region
-
 
 import com.amazonaws.auth.BasicAWSCredentials
-import com.amazonaws.regions.Regions
-import com.amazonaws.services.ec2.model.{Reservation, DescribeInstancesRequest}
-import com.amazonaws.services.ec2.{AmazonEC2AsyncClient, AmazonEC2Client}
-import play.api.Logger
-import play.api.inject.ApplicationLifecycle
+import com.amazonaws.regions.{Region, Regions}
+import com.amazonaws.services.ec2.AmazonEC2Client
+import com.amazonaws.services.ec2.model.DescribeInstancesRequest
+import play.api.{Configuration, Logger}
 
-import scala.concurrent.{ExecutionContext, Future, Promise}
+import scala.concurrent.ExecutionContext
 
 /**
  * This class looks up addresses of services.
  */
 @Singleton
-class ServiceDiscovery @Inject() (implicit ec: ExecutionContext) /*@Inject()*/ {
+class ServiceDiscovery @Inject() (configuration : Configuration) (implicit ec: ExecutionContext) {
 
   private var services = scala.collection.mutable.Map[String, String]()
 
-  private val accessKey = "AKIAJSUMXFR75I4HW7UA"
-  private val secretKey = "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"
+  private val accessKey = configuration.getString("key.aws.access").get
+  private val secretKey = configuration.getString("key.aws.secret").get
 
   private val awsCredentials = new BasicAWSCredentials(accessKey, secretKey)
   private val ec2Client = {
@@ -32,8 +28,6 @@ class ServiceDiscovery @Inject() (implicit ec: ExecutionContext) /*@Inject()*/ {
     client.setRegion(Region.getRegion(Regions.EU_WEST_1))
     client
   }
-
-
 
   def getHost(subdomain : String) : String = {
     val maybeAddress = services get subdomain

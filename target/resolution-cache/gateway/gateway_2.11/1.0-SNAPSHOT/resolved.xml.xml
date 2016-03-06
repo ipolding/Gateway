@@ -4,7 +4,7 @@
 		module="gateway_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160305115751"
+		publication="20160306112046"
 	>
 		<description>
 		gateway

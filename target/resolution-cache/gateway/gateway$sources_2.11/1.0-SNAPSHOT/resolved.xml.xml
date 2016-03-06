@@ -4,7 +4,7 @@
 		module="gateway$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160305115459"
+		publication="20160306105701"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
